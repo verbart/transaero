@@ -7,3 +7,9 @@
 // Var for using custom font
 $font-1: 'Open Sans', Helvetica, Arial, sans-serif;
 */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
+$font-1: 'PT Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&subset=cyrillic-ext,latin-ext');
+$font-2: 'Roboto', sans-serif;
