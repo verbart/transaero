@@ -1,9 +1,9 @@
-@import '../normalize.scss';
+@import '../normalize.scss'; // TODO: Include it as NPM dependence, and import from node_modules
 
 /* Libraries, which is used in current project. */
 @import 'partials/_libraries.scss';
 
-/* Libraries, which is used in current project. */
+/* Libraries, which is used in current project. */ // TODO: Again Libraries?
 @import 'built-in-partials/_service.scss';
 
 /* Plugins, which is used in current project. */

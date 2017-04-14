@@ -1,2 +1,29 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+
+.input {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #c8c8c8;
+    &__control {
+        height: 2rem;
+        padding-left: .5rem;
+        padding-right: 2rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        border: 0;
+        outline: none;
+        background: none;
+        &::placeholder {
+            font-family: $font-1;
+            color: #b2b2b2;
+            opacity: 1;
+        }
+    }
+    &__icon {
+        position: absolute;
+        right: .5rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

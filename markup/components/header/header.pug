@@ -1,6 +1,8 @@
-include ../logo/logo
+include headerTop/headerTop
+include headerMain/headerMain
 
 
 mixin header(data)
     +b.HEADER.header()&attributes(attributes)
-        +logo()
+        +headerTop()
+        +headerMain()

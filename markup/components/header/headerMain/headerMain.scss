@@ -1,0 +1,29 @@
+.headerMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+    &__logo {
+        padding: 15px;
+    }
+    &__navbar {
+        align-self: flex-end;
+        padding-top: 20px;
+        @media (max-width: 900px) {
+            align-self: center;
+            order: 3;
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+    &__search {
+        align-self: flex-end;
+        padding: 20px 15px;
+        @media (max-width: 900px) {
+            align-self: center;
+        }
+    }
+}

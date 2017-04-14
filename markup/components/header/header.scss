@@ -1,3 +1,6 @@
-.header {
+@import 'headerTop/headerTop';
+@import 'headerMain/headerMain';
 
+.header {
+    border-bottom: 1px solid #c8c8c8;
 }

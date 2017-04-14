@@ -1,0 +1,15 @@
+include ../../logo/logo
+include ../../tabs/tabs
+
+
+mixin headerMain(data)
+    +b.headerMain.container()&attributes(attributes)
+        +e.logo
+            +logo()
+        +e.navbar
+            +tabs()
+        +e.search
+            span.input
+                .input__box
+                    input.input__control(placeholder='поиск по сайту')
+                    != pugHelpers.Icon.call(locals, {iconName: 'search', className: 'input__icon', iconWidth: '17', iconHeight: '17'})

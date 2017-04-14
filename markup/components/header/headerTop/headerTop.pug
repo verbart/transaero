@@ -1,0 +1,16 @@
+mixin headerTop(data)
+    +b.headerTop()&attributes(attributes)
+        +e.container.container
+            +e.section
+                +e.A.link.link(href=jv0) USA site
+                +e.A.link.link(href=jv0) Deutsch site
+                +e.SPAN.link
+                    b Россия:&nbsp;
+                    a.link(href=jv0) Switch to english
+
+            +e.section
+                +e.SPAN.link
+                    != pugHelpers.Icon.call(locals, {iconName: 'time', iconWidth: '20', iconHeight: '20'})
+                    span &nbsp;&nbsp;
+                    a.link(href=jv0) Онлайн-табло
+                +e.A.link.link(href=jv0) Вход и регистрация

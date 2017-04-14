@@ -6,6 +6,42 @@
     box-sizing: border-box;
 }
 
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: none;
+}
+
 html, body {
     height: 100%;
+}
+
+html {
+    font: 400 16px/1.5 $font-1;
+    //@media (max-width: 768px) {
+    //    font-size: 14px;
+    //}
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: #0c4da2;
+    font-weight: 700;
+    transition: .2s;
+    &:hover {
+        color: lighten(#0c4da2, 20%);
+    }
 }
