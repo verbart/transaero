@@ -1,0 +1,144 @@
+<div class="remodal remodal-sm" data-remodal-id="auth">
+    <button class="remodal-close" data-remodal-action="close"></button>
+    <form id="authForm">
+        <div class="padding_bottom">
+            <div class="input">
+                <input class="input__control" name="email" placeholder="email" type="email" required="required" data-msg-email="Введите корректный адрес"
+                data-msg-required="Это обязательное поле" />
+            </div>
+        </div>
+        <div class="padding_bottom">
+            <div class="input">
+                <input class="input__control" name="password" placeholder="пароль" type="password" required="required" data-msg-required="Это обязательное поле"
+                />
+            </div>
+        </div>
+        <button class="button">Войти</button>
+    </form>
+</div>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Главная</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+
+
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>
+        (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerTop">
+            <div class="headerTop__container container">
+                <div class="headerTop__section">
+                    <a class="headerTop__link link" href="javascript:void(0)">USA site</a>
+                    <a class="headerTop__link link" href="javascript:void(0)">Deutsch site</a>
+                    <span class="headerTop__link">
+                        <b>Россия:&nbsp;</b>
+                        <a class="link" href="javascript:void(0)">Switch to english</a>
+                    </span>
+                </div>
+                <div class="headerTop__section">
+                    <span class="headerTop__link">
+                        <svg class="icon__time" width="20" height="20">
+                            <use xlink:href="svg-symbols.svg#time"></use>
+                        </svg>
+                        <span>&nbsp;&nbsp;</span>
+                        <a class="link" href="javascript:void(0)">Онлайн-табло</a>
+                    </span>
+                    <a class="headerTop__link link" href="javascript:void(0)" data-remodal-target="auth">Вход и регистрация</a>
+                </div>
+            </div>
+        </div>
+        <div class="headerMain container">
+            <div class="headerMain__logo">
+                <img class="logo" src="static/img/assets/logo/logo.png" alt="TRANSAERO air company" title="" />
+            </div>
+            <div class="headerMain__navbar">
+                <div class="tabs">
+                    <div class="tabs__header">
+                        <div class="tabs__tab tabs__tab_active" data-target="#opportunities">
+                            <div class="tabs__title" data-tab-id="1">Возможности
+                            </div>
+                        </div>
+                        <div class="tabs__tab" data-target="#information">
+                            <div class="tabs__title" data-tab-id="2">Информация
+                            </div>
+                        </div>
+                        <div class="tabs__tab" data-target="#privileges">
+                            <div class="tabs__title" data-tab-id="3">Привилегии
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerMain__search">
+                <div class="input">
+                    <input class="input__control" placeholder="поиск по сайту" />
+                    <svg class="input__icon" width="17" height="17">
+                        <use xlink:href="svg-symbols.svg#search"></use>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="tabs__content" id="opportunities">
+        <div class="hero">
+            <div class="hero__slider container">
+                <div class="hero__slide">
+                    <h2 class="hero__header hero__header_secondary">Открывайте мир
+                    </h2>
+                    <h1 class="hero__header hero__header_primary">вместе с Трансаэро &nbsp;
+                        <svg class="hero__icon" width="28" height="28">
+                            <use xlink:href="svg-symbols.svg#plane"></use>
+                        </svg>
+
+                    </h1>
+                    <p class="hero__description">Почувствуйте комфорт современного Boeing 747-300
+                    </p>
+                </div>
+                <div class="hero__slide">
+                    <h2 class="hero__header hero__header_secondary">Открывайте мир
+                    </h2>
+                    <h1 class="hero__header hero__header_primary">вместе с Трансаэро &nbsp;
+                        <svg class="hero__icon" width="28" height="28">
+                            <use xlink:href="svg-symbols.svg#plane"></use>
+                        </svg>
+
+                    </h1>
+                    <p class="hero__description">Почувствуйте комфорт современного Boeing 747-300
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs__content" id="information">
+        <div class="container">
+            <p>Авиакомпания «Трансаэро» была зарегистрирована 30 сентября 1990 года.</p>
+        </div>
+    </div>
+    <div class="tabs__content" id="privileges">
+        <div class="container">
+            <p>Мы просто лушие.</p>
+        </div>
+    </div>
+    <footer class="footer">
+    </footer>
+    <script src="static/js/main.min.js"></script>
+</body>
+
+</html>
