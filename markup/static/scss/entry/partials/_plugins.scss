@@ -2,3 +2,18 @@
 @import '../../../../../node_modules/slick-carousel/slick/slick-theme.scss';
 
 @import '../../plugins/slick';
+@import '../../plugins/remodal';
+@import '../../plugins/remodal-default-theme';
+
+.remodal {
+    max-width: 600px;
+    &-sm {
+        max-width: 440px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &-close {
+        left: auto;
+        right: 0;
+    }
+}

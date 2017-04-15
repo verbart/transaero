@@ -1,0 +1,10 @@
+.padding {
+    &_bottom {
+        padding-bottom: 15px;
+    }
+}
+
+.inputError {
+    display: block;
+    color: red;
+}

@@ -1,0 +1,25 @@
+.remodal.remodal-sm(data-remodal-id='auth')
+    button.remodal-close(data-remodal-action='close')
+
+    form#authForm
+        .padding_bottom
+            .input
+                input.input__control(
+                    name='email'
+                    placeholder='email'
+                    type='email'
+                    required
+                    data-msg-email='Введите корректный адрес'
+                    data-msg-required='Это обязательное поле'
+                )
+        .padding_bottom
+            .input
+                input.input__control(
+                    name='password'
+                    placeholder='пароль'
+                    type='password'
+                    required
+                    data-msg-required='Это обязательное поле'
+                )
+
+        button.button Войти
