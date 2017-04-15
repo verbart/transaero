@@ -108,7 +108,7 @@
     "no-shadow": 2,
     "no-shadow-restricted-names": 2,
     "no-spaced-func": 2,
-    "no-trailing-spaces": 2,
+    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
     "no-undef": 2,
     "no-undef-init": 2,
     "no-undefined": 2,
