@@ -4,7 +4,7 @@ block vars
     -pageSettings.title = 'Главная';
 
 block content
-    #tabsContent
+    #opportunities.tabs__content
         +b.hero
             +e.slider.container
                 each slide in Array(2)
@@ -13,3 +13,11 @@ block content
                         +e.H1.header_primary вместе с Трансаэро &nbsp;
                             != pugHelpers.Icon.call(locals, {iconName: 'plane', className: 'hero__icon', iconWidth: '28', iconHeight: '28'})
                         +e.P.description Почувствуйте комфорт современного Boeing 747-300
+
+    #information.tabs__content
+        .container
+            p Авиакомпания «Трансаэро» была зарегистрирована 30 сентября 1990 года.
+
+    #privileges.tabs__content
+        .container
+            p Мы просто лушие.

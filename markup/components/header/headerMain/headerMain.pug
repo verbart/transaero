@@ -7,12 +7,12 @@ mixin headerMain(data)
             +logo()
         +e.navbar
             +b.tabs
-                +e.header(data-tabs-content='#tabsContent')
-                    +e.tab_active
+                +e.header
+                    +e.tab_active(data-target='#opportunities')
                         +e.title(data-tab-id='1') Возможности
-                    +e.tab
+                    +e.tab(data-target='#information')
                         +e.title(data-tab-id='2') Информация
-                    +e.tab
+                    +e.tab(data-target='#privileges')
                         +e.title(data-tab-id='3') Привилегии
         +e.search
             .input

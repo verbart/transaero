@@ -1,19 +1,22 @@
 .headerTop {
     font-size: 0.8rem;
+
     background: #eee;
     &__container {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
+
         @media (max-width: 640px) {
             justify-content: center;
         }
     }
     &__section {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
+        align-items: center;
         padding: 10px 15px;
+
         @media (max-width: 640px) {
             justify-content: center;
         }
@@ -21,9 +24,11 @@
     &__link {
         display: inline-flex;
         align-items: center;
+
         white-space: nowrap;
         &:not(:last-child) {
             padding-right: 30px;
+
             @media (max-width: 640px) {
                 padding-right: 15px;
             }

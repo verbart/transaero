@@ -1,14 +1,16 @@
 .hero {
     display: flex;
     align-items: flex-end;
-    margin-top: 30px;
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+
+    font-family: $font-2;
+    color: #fff;
+
     background: linear-gradient(transparent 40%, #1c065b 100%),
                 //url('../img/assets/hero/bg-addon.png') 100% 0 / auto 100% no-repeat,
                 url('../img/assets/hero/banner.jpg') center / cover;
-    color: #fff;
-    font-family: $font-2;
     &__slider {
         overflow: hidden;
         .slick-arrow {
@@ -19,19 +21,24 @@
     }
     &__slide {
         padding: 180px 80px 70px;
+
         @media (max-width: 768px) {
-            padding-left: 0;
             padding-right: 0;
+            padding-left: 0;
         }
     }
     &__header {
         margin: 0;
+
         line-height: 1;
         &_primary {
             position: relative;
+
             display: inline-block;
+
             font-size: 4.75rem;
             font-weight: 300;
+
             @media (max-width: 768px) {
                 font-size: 3rem;
             }
@@ -39,6 +46,7 @@
         &_secondary {
             font-size: 3rem;
             font-weight: 200;
+
             @media (max-width: 768px) {
                 font-size: 2rem;
             }
@@ -48,6 +56,7 @@
         position: absolute;
         top: .5rem;
         right: 0;
+
         @media (max-width: 920px) {
             display: none;
         }
