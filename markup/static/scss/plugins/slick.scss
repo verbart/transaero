@@ -1,0 +1,28 @@
+.slick {
+    &-loading &-list {
+        background: #fff center center no-repeat;
+    }
+    &-arrow {
+        z-index: 1;
+        transition: 0.4s;
+        &:hover {
+            opacity: 0.6;
+        }
+        &:before {
+            content: '';
+            font-family: inherit;
+        }
+    }
+    &-prev, &-prev:hover, &-prev:focus {
+        @include bg($arrow_to-left);
+        left: 0;
+    }
+    &-next, &-next:hover, &-next:focus {
+        @include bg($arrow_to-right);
+        right: 0;
+    }
+    &-dots li button:before {
+        content: '';
+        font-family: inherit;
+    }
+}

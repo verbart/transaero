@@ -36,12 +36,3 @@ img {
     margin-right: auto;
 }
 
-.link {
-    text-decoration: none;
-    color: #0c4da2;
-    font-weight: 700;
-    transition: .2s;
-    &:hover {
-        color: lighten(#0c4da2, 20%);
-    }
-}

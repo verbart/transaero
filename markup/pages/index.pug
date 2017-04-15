@@ -4,4 +4,12 @@ block vars
     -pageSettings.title = 'Главная';
 
 block content
-    // Контент здесь
+    #tabsContent
+        +b.hero
+            +e.slider.container
+                each slide in Array(2)
+                    +e.slide
+                        +e.H2.header_secondary Открывайте мир
+                        +e.H1.header_primary вместе с Трансаэро &nbsp;
+                            != pugHelpers.Icon.call(locals, {iconName: 'plane', className: 'hero__icon', iconWidth: '28', iconHeight: '28'})
+                        +e.P.description Почувствуйте комфорт современного Boeing 747-300

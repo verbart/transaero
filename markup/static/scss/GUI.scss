@@ -1,6 +1,16 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
 
+.link {
+    text-decoration: none;
+    color: #0c4da2;
+    font-weight: 700;
+    transition: .2s;
+    &:hover {
+        color: lighten(#0c4da2, 20%);
+    }
+}
+
 .input {
     display: inline-block;
     position: relative;
@@ -14,10 +24,13 @@
         border: 0;
         outline: none;
         background: none;
+        color: #333;
         &::placeholder {
             font-family: $font-1;
+            font-weight: 400;
             color: #b2b2b2;
             opacity: 1;
+            line-height: 1.75;
         }
     }
     &__icon {
